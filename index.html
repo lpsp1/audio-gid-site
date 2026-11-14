@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Аудио гид по Калининградской области — Черняховск, замки, побережье</title>
+  <meta name="description" content="Аудиогид-квест по Калининградской области: 41 место, истории на русском и английском, «Машина времени» со старыми открытками и баллы за прогулку.">
+  <meta name="theme-color" content="#0e3a46">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="module" crossorigin src="./assets/main-DGgPsfpq.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/timemachine-Dl1xCkax.js">
+  <link rel="stylesheet" crossorigin href="./assets/timemachine-BPMNkGm7.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-BcWe6ME8.css">
+</head>
+<body class="landing">
+
+  <!-- Hero: a programme card over a dim room -->
+  <header class="hero">
+    <img class="hero__photo" src="img/places/insterburg-castle.jpg" alt="" width="1600" height="1067" fetchpriority="high">
+    <div class="hero__card on-amber">
+      <h1 class="hero__title display">
+        <span data-i18n="h1a">Аудиогид</span>
+        <span data-i18n="h1b">по янтарному</span>
+        <span data-i18n="h1c">краю</span>
+      </h1>
+      <div class="hero__body">
+        <ul class="hero__facts">
+          <li data-i18n="fact1">41 место и 8 экскурсий</li>
+          <li data-i18n="fact2">Русский и английский</li>
+          <li data-i18n="fact3">Бесплатно, без регистрации</li>
+        </ul>
+        <p class="hero__lead" data-i18n="lead">Подойдите к замку, кирхе или маяку — и рассказ начнётся сам.</p>
+      </div>
+      <div class="hero__foot">
+        <span class="hero__credit" data-i18n="heroCredit">На фото: замок Инстербург, Черняховск</span>
+        <a class="btn btn--ink" href="guide.html" data-i18n="open">Открыть гид</a>
+        <div class="lang" role="group" data-i18n-attr="aria-label:language">
+          <button type="button" data-lang-btn="ru">RU</button>
+          <button type="button" data-lang-btn="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- How it works: one verb at a time -->
+    <section class="verbs" id="how" data-i18n-attr="aria-label:howLabel">
+      <article class="verb">
+        <img src="img/places/zelenogradsk.jpg" alt="" width="1600" height="898" loading="lazy">
+        <div class="verb__word"><h2 class="display" data-i18n="v1">Иди</h2></div>
+        <p class="verb__text" data-i18n="v1t">Включите «Рядом со мной» и просто гуляйте. Карта покажет, что вокруг и сколько до ближайшей точки.</p>
+      </article>
+      <article class="verb">
+        <img src="img/places/st-bruno.jpg" alt="" width="1067" height="1600" loading="lazy">
+        <div class="verb__word"><h2 class="display" data-i18n="v2">Слушай</h2></div>
+        <p class="verb__text" data-i18n="v2t">За 150 метров до места рассказ запускается сам. Две-три минуты у каждой точки: кто строил, что здесь случилось и на что смотреть.</p>
+      </article>
+      <article class="verb">
+        <img src="img/places/alter-markt-then.jpg" alt="" width="1600" height="1011" loading="lazy">
+        <div class="verb__word"><h2 class="display" data-i18n="v3">Сравни</h2></div>
+        <p class="verb__text" data-i18n="v3t">«Машина времени» кладёт довоенную открытку поверх камеры. Тот же перекрёсток, только сто лет назад.</p>
+      </article>
+      <article class="verb">
+        <img src="img/places/yantarny.jpg" alt="" width="1600" height="488" loading="lazy">
+        <div class="verb__word"><h2 class="display" data-i18n="v4">Собирай</h2></div>
+        <p class="verb__text" data-i18n="v4t">Пять баллов за дослушанную историю, двадцать — за отметку на месте. Баллы копятся на скидки у партнёров.</p>
+      </article>
+    </section>
+
+    <!-- The live thing: the time machine -->
+    <section class="machine" id="machine">
+      <div class="machine__stage" id="machineStage" data-reveal></div>
+      <div class="machine__side">
+        <h2 class="head display" data-reveal data-i18n="tmHead">Тот же адрес, другой век</h2>
+        <p data-reveal data-i18n="tmText">Потяните границу: слева довоенная открытка, справа сегодняшний снимок. В гиде то же самое работает через камеру телефона, прямо на улице.</p>
+        <div class="machine__picker" id="machinePicker" role="group" data-reveal data-i18n-attr="aria-label:tmPick"></div>
+        <p class="machine__caption" id="machineCaption" data-reveal></p>
+        <a class="btn" id="machineLink" href="guide.html" data-reveal data-i18n="tmOpen">Послушать это место</a>
+      </div>
+    </section>
+
+    <!-- Showcase: cards crossing a held photograph -->
+    <section class="cross" id="chernyakhovsk">
+      <div class="cross__stage">
+        <img class="cross__ground" src="img/places/georgenburg-stud.jpg" alt="" width="1600" height="1200">
+        <div class="cross__track" id="crossTrack">
+          <div class="cross__intro">
+            <h2 class="head display" data-i18n="crossHead">Начните с Черняховска</h2>
+            <p data-i18n="crossText">Бывший Инстербург: два орденских замка, конный завод, дома Ганса Шаруна. В 2027 году город станет столицей «Серебряного ожерелья».</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ready-made routes -->
+    <section class="tours" id="routes">
+      <div class="tours__head">
+        <h2 class="head display" data-reveal data-i18n="toursHead">Готовые маршруты</h2>
+        <p data-reveal data-i18n="toursText">Восемь экскурсий на выбор. Каждая начинается со вступления гида и ведёт от точки к точке по карте. Любую можно изменить под себя или собрать свой маршрут из одной или нескольких остановок: гид посчитает дорогу, время и подскажет, как добраться.</p>
+        <a class="btn" href="guide.html#routes" data-reveal data-i18n="toursBtn">Собрать свой маршрут</a>
+      </div>
+      <div class="tours__list" id="tours"></div>
+    </section>
+
+    <!-- The list: line-up at one type size -->
+    <section class="lineup on-amber" id="places">
+      <h2 class="head display" data-reveal data-i18n="listHead">Все 41 место</h2>
+      <div class="lineup__table" id="lineup"></div>
+    </section>
+
+    <!-- Features: stacking colour sheets -->
+    <section class="stack" id="features">
+      <h2 class="head display" data-reveal data-i18n="featHead">Что умеет гид</h2>
+      <article class="sheet-f sheet-f--1">
+        <h3 class="display" data-i18n="f1">Включается сам</h3>
+        <p data-i18n="f1t">Не нужно искать кнопку или наводить камеру на табличку. Гид следит за геолокацией и начинает рассказ, когда вы рядом.</p>
+        <img src="img/places/rauschen-tower.jpg" alt="" width="1280" height="1066" loading="lazy">
+      </article>
+      <article class="sheet-f sheet-f--2">
+        <h3 class="display" data-i18n="f2">QR вместо GPS</h3>
+        <p data-i18n="f2t">У толстых крепостных стен спутники теряются. На этот случай у каждой точки есть QR-код: навели телефон — история и баллы ваши.</p>
+        <img src="img/places/fort5.jpg" alt="" width="1600" height="1067" loading="lazy">
+      </article>
+      <article class="sheet-f sheet-f--3">
+        <h3 class="display" data-i18n="f3">Баллы за прогулку</h3>
+        <p data-i18n="f3t">Каждая история и каждая отметка на месте приносят баллы. Их можно будет менять на скидки в кафе и музеях-партнёрах.</p>
+        <img src="img/places/georgenburg.jpg" alt="" width="1600" height="1074" loading="lazy">
+      </article>
+      <article class="sheet-f sheet-f--4">
+        <h3 class="display" data-i18n="f4">Два языка</h3>
+        <p data-i18n="f4t">Все истории записаны на русском и английском. Язык переключается одной кнопкой, прогресс и баллы остаются.</p>
+        <img src="img/places/queen-louise-bridge.jpg" alt="" width="1600" height="1200" loading="lazy">
+      </article>
+    </section>
+
+    <!-- Pricing: the ticket -->
+    <section class="fare" id="premium">
+      <h2 class="visually-hidden" data-i18n="fareLabel">Премиум-маршрут</h2>
+      <div class="ticket">
+        <div class="ticket__main">
+          <p class="ticket__title display" data-i18n="fareTitle">Премиум-маршрут</p>
+          <ul class="ticket__lines">
+            <li data-i18n="fare1">Инстербург за один день</li>
+            <li data-i18n="fare2">12 точек Черняховска подряд</li>
+            <li data-i18n="fare3">Продажи ещё не открыты</li>
+            <li data-i18n="fare4">Все 41 история сейчас бесплатны</li>
+          </ul>
+        </div>
+        <div class="ticket__stub">
+          <p class="ticket__price display">300 ₽</p>
+          <a class="btn" href="guide.html" data-i18n="fareBtn">Слушать бесплатно</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing photograph -->
+    <section class="last">
+      <img src="img/places/efa.jpg" alt="" width="1600" height="1067">
+      <div class="last__text">
+        <h2 class="head display" data-reveal data-i18n="lastHead">Наденьте наушники</h2>
+        <p data-reveal data-i18n="lastText">Гид открывается в браузере телефона. Ничего не нужно скачивать: откройте карту и идите к ближайшей точке.</p>
+        <a class="btn btn--pale" href="guide.html" data-reveal data-i18n="open">Открыть гид</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <details class="credits" id="credits">
+      <summary data-i18n="creditsHead">Авторы фотографий</summary>
+      <p class="credits__list" id="creditsList"></p>
+    </details>
+    <div class="foot__line">
+      <span data-i18n="footWhat">Аудиогид по Калининградской области</span>
+      <nav>
+        <a href="guide.html" data-i18n="footGuide">Гид</a>
+        <a href="#routes" data-i18n="footRoutes">Маршруты</a>
+        <a href="#places" data-i18n="footPlaces">Места</a>
+        <a href="#machine" data-i18n="footMachine">Машина времени</a>
+      </nav>
+      <span data-i18n="footYear">2026 · учебный проект</span>
+    </div>
+  </footer>
+
+</body>
+</html>

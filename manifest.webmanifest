@@ -1,0 +1,12 @@
+{
+  "name": "Аудио гид — Калининградская область",
+  "short_name": "Аудио гид",
+  "description": "Истории 41 места Калининградской области: слушайте на месте и собирайте баллы.",
+  "start_url": "./guide.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e3a46",
+  "theme_color": "#0e3a46",
+  "lang": "ru",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
